@@ -5,16 +5,19 @@
   (scrolled)="onScroll()"
 >
   <mat-card *ngFor="let cat of cats">
-    <mat-card-title>
-      <h1>
-        <a [href]="cat.cfa_url">{{ cat.name }}</a>
-      </h1>
-    </mat-card-title>
-    <mat-card-subtitle>
-      <!-- <h2>{{ cat.city }}, {{ cat.state }}, {{ cat.country }}</h2> -->
-    </mat-card-subtitle>
+    <mat-card-header>
+      <div>
+        <mat-card-title>{{ cat.name }}</mat-card-title>
+        <mat-card-subtitle>Temperament: {{ cat.temperament }}</mat-card-subtitle>
+      </div>  
+    </mat-card-header>
     <mat-card-content>
-      <!-- <h3>Type: {{ cat.brewery_type }}</h3> -->
+      <div class="img-container">
+        <img *ngIf="cat.image" [src]="cat.image.url" width="100" height="100">
+      </div>
+      <div>
+        <span>{{ cat.description }}</span>
+      </div>      
     </mat-card-content>
   </mat-card>
 </div>

@@ -12,7 +12,7 @@ export class CatService {
 
   getCats(page: number): Observable<Cat[]> {
     return this.http.get(
-      `https://api.thecatapi.com/v1/breeds?page=${page}&limit=10`
+      `https://api.thecatapi.com/v1/breeds?page=${page}&limit=5`
     ) as Observable<Cat[]>;
   }
 }
