@@ -1,7 +1,7 @@
 <div
   infinite-scroll
-  [infiniteScrollDistance]="distance"
-  [infiniteScrollThrottle]="throttle"
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="1000"
   (scrolled)="onScroll()"
 >
   <mat-card *ngFor="let cat of cats">

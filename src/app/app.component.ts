@@ -9,9 +9,7 @@ import { CatService } from './cat.service';
 })
 export class AppComponent implements OnInit {
   title = 'angular-infinite-scroll-example';
-
-  throttle = 0;
-  distance = 2;
+  
   page = 1;
   cats: Cat[] = []
 
