@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   throttle = 0;
   distance = 2;
   page = 1;
-  cats: Cat[] | any[] = [];
+  cats: Cat[] = []
 
   constructor(private catService: CatService) {}
 

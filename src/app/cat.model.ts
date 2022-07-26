@@ -1,4 +1,6 @@
 export interface Cat {
     name: string,
-    cfa_url: string
+    temperament: string,
+    image: any,
+    description: string
 }
