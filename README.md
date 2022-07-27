@@ -1,5 +1,7 @@
 # AngularInfiniteScrollExample
 
+Link to Medium Article/Tutprial: https://medium.com/@michelle.wiginton00/implementing-infinite-scrolling-using-angular-82c66f27e817
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
 ## Development server
